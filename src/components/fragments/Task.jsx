@@ -14,10 +14,14 @@ export const Task = ({ data }) => {
         </li>
         <li>
           <button onClick={() => deleteTask(data.id)}>
-            Delete task {data.id + 1}
+            Edit task
+          </button>
+          <button style={{marginLeft: 10}} onClick={() => deleteTask(data.id)}>
+            Delete task
           </button>
         </li>
       </ul>
+      <hr/>
     </>
   );
 };
