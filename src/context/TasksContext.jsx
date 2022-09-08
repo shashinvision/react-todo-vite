@@ -26,6 +26,9 @@ export function TasksContextProvider(props) {
     ]);
     return true;
   }
+  function editTask(id) {
+    alert('Please'+ id)
+  }
 
   function deleteTask(taskId) {
     setTasks(tasks.filter((task) => task.id !== taskId));
@@ -37,6 +40,7 @@ export function TasksContextProvider(props) {
         tasks,
         addTask,
         deleteTask,
+        editTask,
       }}
     >
       <h1>Componente Context</h1>
