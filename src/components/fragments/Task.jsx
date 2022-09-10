@@ -14,7 +14,7 @@ export const Task = ({ data }) => {
           <b>Description: </b> <i>{data.description}</i>
         </li>
         <li>
-          <Link to={"edit/" + data.id}>Edit task</Link>
+          <Link to={"edit/" + data.id} state={data}>Edit task</Link>
           <button
             style={{ marginLeft: 10 }}
             onClick={() => deleteTask(data.id)}

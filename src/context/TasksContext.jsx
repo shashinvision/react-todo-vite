@@ -26,8 +26,15 @@ export function TasksContextProvider(props) {
     ]);
     return true;
   }
-  function editTask(id) {
-    alert('Please'+ id)
+  function editTask(data) {
+    let arr = [...tasks];
+    for (const i in arr) {
+      if (arr[i].id == data.id) {
+        arr[i].title = data.title;
+        arr[i].description = data.description;
+      }
+    }
+    setTasks(arr);
   }
 
   function deleteTask(taskId) {
