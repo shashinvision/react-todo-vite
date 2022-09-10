@@ -28,9 +28,8 @@ export default function NewTask({ data }) {
 
   return (
     <>
-      <h1>To Do List</h1>
-      <hr />
       <div>
+        <hr/>
         <label htmlFor="newTask">Title Task: </label>
         <input
           type="text"
